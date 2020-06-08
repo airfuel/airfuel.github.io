@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Risk Accumulation Model"
+title: "Framework"
 author: "The Interns"
 categories: sample
 tags: [sample]
