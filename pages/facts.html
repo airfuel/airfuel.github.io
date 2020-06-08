@@ -7,23 +7,22 @@ title: Background
     <div class="featured-posts" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
       <h2><span>{{ post.title }}</span></h2>
       
-      <div id="observablehq-0da4899d">
+  <div id="observablehq-0da4899d">
   <div class="observablehq-viewof-visiblePoints"></div>
   <div class="observablehq-visiblePoints"></div>
+</div>
+      
+      <div id="observablehq-7f417792">
+  <div class="observablehq-viewof-visiblePoints"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
   import define from "https://api.observablehq.com/@d3/testing-projection-visibility.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "viewof visiblePoints") return Inspector.into("#observablehq-0da4899d .observablehq-viewof-visiblePoints")();
-    if (name === "visiblePoints") return Inspector.into("#observablehq-0da4899d .observablehq-visiblePoints")();
+	if (name === "viewof visiblePoints") return Inspector.into("#observablehq-7f417792 .observablehq-viewof-visiblePoints")();
   });
 </script>
- 
 
-      
-      
-      
     </div>
   </a>
 {% endfor %}
