@@ -16,7 +16,7 @@ sass:
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Air Force Operational Energy"
 description:	       "Summer 2020 Intern Project"
-author:              "Paul Le"
+author:              "Marina Beshai, Jaylen Barrett, and Megha Sharma"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
