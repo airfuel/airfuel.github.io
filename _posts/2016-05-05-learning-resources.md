@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Framework"
+title: "The Risk Accumulation Model"
 author: "The Interns"
 categories: resources
 tags: [documentation,sample]
