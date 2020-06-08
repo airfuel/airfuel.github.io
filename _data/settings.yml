@@ -7,9 +7,9 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Background', folder: 'pages', file: 'resource.html'}
-- {name: 'Framework', folder: 'pages', file: 'facts.html'}
-- {name: 'Risk Accumulation Model', folder: 'pages', file: 'sample-posts.html'}
+- {name: 'Background', folder: 'pages', file: 'facts.html'}
+- {name: 'Framework', folder: 'pages', file: 'sample-posts.html'}
+- {name: 'Risk Accumulation Model', folder: 'pages', file: 'resources.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 # social:
