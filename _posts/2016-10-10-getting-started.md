@@ -6,15 +6,3 @@ categories: documentation
 tags: [documentation,sample]
 image: oil-2.jpg
 ---
-
- 
-<div id="observablehq-71cba673">
-  <div class="observablehq-canvas"></div>
-</div>
-<script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@d3/world-tour.js?v=3";
-  (new Runtime).module(define, name => {
-    if (name === "canvas") return Inspector.into("#observablehq-71cba673 .observablehq-canvas")();
-  });
-</script>
