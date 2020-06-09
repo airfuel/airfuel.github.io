@@ -2,7 +2,7 @@
 layout: post
 title: "Framework"
 author: "The Interns"
-categories: sample
-tags: [sample]
+categories: resources
+tags: [documentation,sample]
 image: tanks.jpg
 ---
