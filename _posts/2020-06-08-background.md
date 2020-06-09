@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Welcome to the 2020 Intern Project!"
+title: "Background"
 author: "The Interns"
-categories: facts
+categories: documentation
 tags: [documentation,sample]
-image: air-1.jpg
+image: oil-2.jpg
 ---
-
-hello world! 
