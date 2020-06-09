@@ -2,7 +2,7 @@
 layout: post
 title: "Background"
 author: "The Interns"
-categories: documentation
-tags: [documentation]
+categories: history
+tags: [history]
 image: oil-2.jpg
 ---
