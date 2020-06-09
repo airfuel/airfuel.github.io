@@ -12,14 +12,14 @@ title: Background
 {% endfor %}
 
  
-<div id="observablehq-0da4899d">
-  <div class="observablehq-viewof-visiblePoints"></div>
-  <div class="observablehq-visiblePoints"></div>
+<div id="observablehq-71cba673">
+  <div class="observablehq-canvas"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@d3/testing-projection-visibility.js?v=3";
+  import define from "https://api.observablehq.com/@d3/world-tour.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "viewof visiblePoints") return Inspector.into("#observablehq-0da4899d .observablehq-viewof-visiblePoints")();
+    if (name === "canvas") return Inspector.into("#observablehq-71cba673 .observablehq-canvas")();
   });
 </script>
+
