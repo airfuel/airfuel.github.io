@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Risk Accumulation Model"
+title: "DELETE"
 author: "The Interns"
-categories: resources
-tags: [resources]
+categories: 
+tags: []
 image: oil-drilling.jpg
 ---
