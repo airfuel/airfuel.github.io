@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Framework"
+title: "DELETE"
 author: "The Interns"
 categories: sample
 tags: [sample]
