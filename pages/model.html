@@ -13,7 +13,12 @@ title: Risk Accumulation Model
   });
 </script>
 
-<HTML> 
-  <HEAD> My game applet </HEAD>
-  <BODY> <div > <APPLET CODE="Main.class" WIDTH="800" HEIGHT="500"></APPLET> </div> </BODY> 
-</HTML>
+<script src="http://www.java.com/js/deployJava.js"></script>
+<script>
+    var attributes = {
+        code:'FinalProject.class',
+    width:700, height:500} ;
+    var parameters = {}; // does the Applet take parameters?
+    var version = '1.6' ; // does the Applet require a minimum version of Java
+    deployJava.runApplet(attributes, parameters, version);
+</script>
