@@ -3,13 +3,13 @@ layout: page
 title: Prototype
 ---
 
-<div id="observablehq-fa6c0c6d">
+<div id="observablehq-6875eb4f">
   <div class="observablehq-myChart"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
   import define from "https://api.observablehq.com/@mbeshai20/force-directed-graph-network-graph-with-arrowheads-and-lab.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "myChart") return Inspector.into("#observablehq-fa6c0c6d .observablehq-myChart")();
+    if (name === "myChart") return Inspector.into("#observablehq-6875eb4f .observablehq-myChart")();
   });
 </script>
