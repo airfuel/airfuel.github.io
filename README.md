@@ -10,6 +10,7 @@ You must change the name of the CSV file being read in.
 
 
 (2) Line 19 of the Client.py program is:
+
         number_of_nodes = int(float(data.loc[0, "Number of Nodes"]))
 
 Lines 22-30 of the Client.py program is:
