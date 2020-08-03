@@ -4,7 +4,8 @@ Everything you need to know to work the code.
 
 ## The Excel Sheet 
 (1) Line 9 of the Client.py program is:
-    data = pd.read_csv("Supply Chain Data - Configuration 3.csv").replace(',', '', regex=True)
+        
+        data = pd.read_csv("Supply Chain Data - Configuration 3.csv").replace(',', '', regex=True)
 
 You must change the name of the CSV file being read in.
 
