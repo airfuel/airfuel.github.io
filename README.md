@@ -7,7 +7,7 @@ Everything you need to know to work the code.
 
 e.g. if you have three nodes (an oil rig, a refinery, and a air force base). Then, START would have ID 0, OIL RIG would have ID 1, REFINERY would have ID 2, AFB would have ID 3, and END would have ID 4. 
 
-(2) If the END NODE ID goes to the Special End Node then "End Node's Capacity [S2, S5]" must equal "999999999999", "Cost [S3]" must equal 0 , "End Node's Expected Capacity [S1, S3, S4]" must equal "999999999999", "Risk + Cost [S5]" must equal "0".
+(2) If the END NODE ID goes to the Special End Node then "End Node's Capacity [S2, S5]" must equal "999999999999", "Cost [S3]" must equal 0 , "End Node's Expected Capacity [S1, S3, S4]" must equal "999999999999", "Risk + Cost [S5]" must equal 0.
 
 e.g. Continuing the example from number one. If there is an edge from the air force base to end, the "Start Node ID" = 3, "End Node ID" = 4, "End Node's Capacity [S2, S5]" = 999999999999, "Edge's Risk [S2, S4]" = user decides risk, "Cost [S3]" = 0, "End Node's Expected Capacity [S1, S3, S4]" = 999999999999, "Risk + Cost [S5]" = 0. 
 
