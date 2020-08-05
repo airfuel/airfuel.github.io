@@ -47,3 +47,13 @@ Lines 23-33 of the Client.py program is:
         y = float(data.loc[i, "Supply/Demand Node ID"])
 
 That means the CSV file that you will upload must have these column titles: "Start Node ID", "End Node ID", "End Node's Capacity [S2, S5]", "Edge's Risk [S2, S4]", "Cost [S3]", "End Node's Expected Capacity [S1, S3, S4]", "Risk + Cost [S5]", "Sink Node ID", "Number of Nodes", "Supply/Demand Node ID", and "Supply/Demand".
+
+(6) On the CSV, for each "Supply/Demand Node ID" starting from 0 to the assigned number for the END Node in the column "Supply/Demand" if it is an oil rig then write a positive number of how much oil is produced, if it is an AFB write a negative number of how much they can hold, if it is neither an oil rig or an AFB then write 0. 
+
+e.g. Contuining the above example, 
+"Supply/Demand Node ID"	"Supply/Demand"
+        0                       0
+        1                    25,000
+        2                       0
+        3                    -50,000
+        4                -999,999,999,999
