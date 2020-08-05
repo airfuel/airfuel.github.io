@@ -11,14 +11,18 @@ e.g. if you have three nodes (an oil rig, a refinery, and a air force base). The
 
 e.g. Continuing the example from number one. If there is an edge from the air force base to end, the "Start Node ID" = 3, "End Node ID" = 4, "End Node's Capacity [S2, S5]" = 999999999999, "Edge's Risk [S2, S4]" = user decides risk, "Cost [S3]" = 0, "End Node's Expected Capacity [S1, S3, S4]" = 999999999999, "Risk + Cost [S5]" = 0. 
 
-(3) Line 9 of the Client.py program is:
+(3) "Sink Node ID" on the CSV file must list below it the special END node's assigned ID number.
+
+e.g. Continuing the above example. We would write in row 2, column H the number "4".
+
+(4) Line 9 of the Client.py program is:
         
         data = pd.read_csv("Supply Chain Data - Configuration 3.csv").replace(',', '', regex=True)
 
 You must change the name of the CSV file being read in.
 
 
-(4) Line 20-21 of the Client.py program is:
+(5) Line 20-21 of the Client.py program is:
         
         sink_node = int(float(data.loc[0, "Sink Node ID"]))
 
@@ -43,5 +47,3 @@ Lines 23-33 of the Client.py program is:
         y = float(data.loc[i, "Supply/Demand Node ID"])
 
 That means the CSV file that you will upload must have these column titles: "Start Node ID", "End Node ID", "End Node's Capacity [S2, S5]", "Edge's Risk [S2, S4]", "Cost [S3]", "End Node's Expected Capacity [S1, S3, S4]", "Risk + Cost [S5]", "Sink Node ID", "Number of Nodes", "Supply/Demand Node ID", and "Supply/Demand".
-
-
