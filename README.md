@@ -51,9 +51,10 @@ That means the CSV file that you will upload must have these column titles: "Sta
 (6) On the CSV, for each "Supply/Demand Node ID" starting from 0 to the assigned number for the END Node in the column "Supply/Demand" if it is an oil rig then write a positive number of how much oil is produced, if it is an AFB write a negative number of how much they can hold, if it is neither an oil rig or an AFB then write 0. 
 
 e.g. Contuining the above example, 
-| "Supply/Demand Node ID" | "Supply/Demand" |
-|         0               |        0        |     
-|         1               |     25,000      |
-|         2               |        0        |
-|         3               |     -50,000     |
-|         4               | -999,999,999,999|
+
+  | "Supply/Demand Node ID" | "Supply/Demand" |
+  |         0               |        0        |     
+  |         1               |     25,000      |
+  |         2               |        0        |
+  |         3               |     -50,000     |
+  |         4               | -999,999,999,999|
