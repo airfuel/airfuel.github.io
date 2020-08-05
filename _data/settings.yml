@@ -11,6 +11,7 @@ menu:
 - {name: 'Framework', folder: 'pages', file: 'framework.html'}
 - {name: 'Prototype', folder: 'pages', file: 'prototype.html'}
 - {name: 'Risk Accumulation Model', folder: 'pages', file: 'model.html'}
+- {name: 'Product Navigation', folder: 'pages', file: 'productnavigation.html'}  
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 # social:
