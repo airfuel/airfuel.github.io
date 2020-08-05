@@ -52,9 +52,9 @@ That means the CSV file that you will upload must have these column titles: "Sta
 
 e.g. Contuining the above example, 
 
-  | "Supply/Demand Node ID" | "Supply/Demand" |
-  |         0               |        0        |     
-  |         1               |     25,000      |
-  |         2               |        0        |
-  |         3               |     -50,000     |
-  |         4               | -999,999,999,999|
+  | "Supply/Demand Node ID" | "Supply/Demand" |   
+  |         0               |        0        |    
+  |         1               |     25,000      |  
+  |         2               |        0        |  
+  |         3               |     -50,000     |  
+  |         4               | -999,999,999,999|  
