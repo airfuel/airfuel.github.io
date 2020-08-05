@@ -16,8 +16,6 @@ You must change the name of the CSV file being read in.
 
 
 (3) Line 20-21 of the Client.py program is:
-
-        number_of_nodes = int(float(data.loc[0, "Number of Nodes"]))
         
         sink_node = int(float(data.loc[0, "Sink Node ID"]))
 
