@@ -3,15 +3,15 @@
 Everything you need to know to work the code. 
 
 ## Creating the Excel
-(1) To create an input .csv file for the algorithm, we recommend creating three other .csv files: Nodes, Edges, and Risks.
+(1) To create an input .csv file for the algorithm, we first recommend creating three other .csv files: Nodes, Edges, and Risks.
 
-In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	"Latitude & Longitude", and "Supply Chain Segment".
-- You do not have to make the special "START" (ID = 0) and "END" Nodes that will be described below.
+(1.1) In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	"Latitude & Longitude", and "Supply Chain Segment".
+- You do not have to make rows for the special "START" (ID = 0) and "END" Nodes that will be described below.
 - Nodes must start at ID = 1.
 - e.g. | "1" | "150,000" | "2" | "41.639881, -87.541937" | "Bulk Storage" |
 - e.g. | "2" | "150,000" | "7" | "41.639881, -87.541937" | "AFB" |	
 
-In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", and "Risk".
+(1.2) In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", and "Risk".
 - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.   
 - The Capacity has to do with End Node ID. e.g. if you're going from Start Node ID 0 (w/capacity 4) to End Node ID 4 (w/capacity 6) then capacity should list 6.
 - The Risk has to do with the End Node ID .e.g. if you're going from Start Node ID 0 (w/risk 4) to End Node ID 4 (w/risk 6) then risk should list 6.
@@ -21,10 +21,11 @@ e.g. | "0" | "2" | "3" | "0.006" | "15081.962" |
 - e.g. Using the Nodes in the example above, 
  | "1" | "2" | "15173" | "0.006" | "15081.962" |
 
-In Risks, we recommend filling in these columns "ID", "Risk Category", "Description", "Probability", "Impact", "Risk/Expected Impact", "Capacity w/ Risk", "Lowest Capacity w/ Risk", and "Final Risk/Expected Impact". 
+(1.3) In Risks, we recommend filling in these columns "ID", "Risk Category", "Description", "Probability", "Impact", "Risk/Expected Impact", "Capacity w/ Risk", "Lowest Capacity w/ Risk", and "Final Risk/Expected Impact". 
 - "Final Risk/Expected Impact" combines all possible risks.  
 - You must make a risk for each node.   
-        
+
+(2) This will help you make another Excel sheet for input...which is described below. 
 
 
 ## The Excel Sheet and The Code
@@ -72,6 +73,15 @@ Lines 23-33 of the Client.py program is:
         y = float(data.loc[i, "Supply/Demand Node ID"])
 
 That means the CSV file that you will upload must have these column titles: "Start Node ID", "End Node ID", "End Node's Capacity [S2, S5]", "Edge's Risk [S2, S4]", "Cost [S3]", "End Node's Expected Capacity [S1, S3, S4]", "Risk + Cost [S5]", "Sink Node ID", "Number of Nodes", "Supply/Demand Node ID", and "Supply/Demand".
+
+(5.5) Most of the information needed to fill out the excel can come from your three othe excels (Nodes, Edges, Risk).
+
+- For each edge, you must have a row describing "Start Node ID", "End Node ID", "End Node's Capacity [S2, S5]", "Edge's Risk [S2, S4]", "Cost [S3]", "End Node's Expected Capacity [S1, S3, S4]", and "Risk + Cost [S5]".
+- "Start Node ID", "End Node ID", "End Node's Capacity [S2, S5]" comes from the "Edges" sheet.
+- "Edge's Risk" which has to do with the End Node comes from the "Risk" sheet.
+- "Cost" comes from the "Node" sheet.
+- "End Node's Expected Capacity [S1, S3, S4]" is equal to capacity - (capacity*risk). 
+- "Risk + Cost [S5]" is equal to cost + (cost*risk). 
 
 (6) On the CSV, for each "Supply/Demand Node ID" starting from 0 to the assigned number for the END Node in the column "Supply/Demand" if it is an oil rig then write a positive number of how much oil is produced, if it is an AFB write a negative number of how much they can hold, if it is neither an oil rig or an AFB then write 0. 
 
