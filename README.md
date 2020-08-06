@@ -93,6 +93,7 @@ e.g. Contuining the above example,
   |         4               | -999,999,999,999|  
 
 
+(7) You must then downlaod the finalized sheet and use it as input for the algorithm. 
  
 ## The Code 
 
