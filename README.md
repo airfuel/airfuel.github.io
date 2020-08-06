@@ -59,13 +59,11 @@ e.g. Contuining the above example,
   |         3               |     -50,000     |  
   |         4               | -999,999,999,999|  
   
-  (7) 
-  
-  Line 12 of OR_Flow.py is:
+  (7) Line 12 of OR_Flow.py is:
   
       output.write("Scenario 1: Max flow using expected capacity.\n\n")
       
-   Line 46 of OR_Flow.py is:
+  Line 46 of OR_Flow.py is:
           
       output = open("Output of Scenario 2.txt", "w")
       
