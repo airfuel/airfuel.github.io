@@ -9,7 +9,7 @@ In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	
 - You do not have to make the special "START" (ID = 0) and "END" Nodes that will be described below.
 - Nodes must start at ID = 1.
 - e.g. | "1" | "150,000" | "2" | "41.639881, -87.541937" | "Bulk Storage" |
-  e.g. | "2" | "150,000" | "7" | "41.639881, -87.541937" | "AFB" |	
+- e.g. | "2" | "150,000" | "7" | "41.639881, -87.541937" | "AFB" |	
 
 In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", and "Risk".
 - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.   
