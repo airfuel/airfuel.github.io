@@ -2,7 +2,21 @@
 
 Everything you need to know to work the code. 
 
-## The Excel Sheet 
+## Creating the Excel
+(1) To create an input .csv file for the algorithm, we recommend creating three other .csv files: Nodes, Edges, and Risks.
+
+In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	"Latitude & Longitude", and "Supply Chain Segment".
+
+In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", "Risk", and "Edge-Weighted Capacity".
+        - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge. 
+
+In Risks, we recommend filling in these columns "ID", "Risk Category", "Description", "Probability", "Impact", "Risk/Expected Impact", "Capacity w/ Risk", "Lowest Capacity w/ Risk", and "Final Risk/Expected Impact". 
+       - "Final Risk/Expected Impact" combines all possible risks. 
+       - You must make a risk for each node. 
+        
+
+
+## The Excel Sheet and The Code
 (1) There are two special nodes that your program must contain. "START" which has ID 0, and "END" which you assign an ID after adding all other nodes. 
 
 e.g. if you have three nodes (an oil rig, a refinery, and a air force base). Then, START would have ID 0, OIL RIG would have ID 1, REFINERY would have ID 2, AFB would have ID 3, and END would have ID 4. 
@@ -58,9 +72,10 @@ e.g. Contuining the above example,
   |         2               |        0        |  
   |         3               |     -50,000     |  
   |         4               | -999,999,999,999|  
-  
+
+
  
- ## The Code 
+## The Code 
 
 (1) Line 12 of OR_Flow.py is:
   
