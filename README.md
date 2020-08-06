@@ -15,8 +15,9 @@ In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", 
 - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.   
 - The Capacity has to do with End Node ID. e.g. if you're going from Start Node ID 0 (w/capacity 4) to End Node ID 4 (w/capacity 6) then capacity should list 6.
 - The Risk has to do with the End Node ID .e.g. if you're going from Start Node ID 0 (w/risk 4) to End Node ID 4 (w/risk 6) then risk should list 6.
-- For each refinery, there must be an edge from 0 to the refinery. 
+- For each oil rig, there must be an edge from 0 to the oil rig. 
 e.g. | "0" | "2" | "3" | "0.006" | "15081.962" |
+- For each air force base, there must be an edge from (air force base id) to the special END Node ID. (Discussed below.)
 - e.g. Using the Nodes in the example above, 
  | "1" | "2" | "15173" | "0.006" | "15081.962" |
 
