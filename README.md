@@ -59,7 +59,10 @@ e.g. Contuining the above example,
   |         3               |     -50,000     |  
   |         4               | -999,999,999,999|  
   
-  (7) Line 12 of OR_Flow.py is:
+ 
+ ## The Code 
+
+(1) Line 12 of OR_Flow.py is:
   
       output.write("Scenario 1: Max flow using expected capacity.\n\n")
       
@@ -81,4 +84,12 @@ e.g. Contuining the above example,
 
  If you'd like to rename the ouput file, you can do so through the lines referenced above. 
 
+
+(2) The different scenarios are...
+
+Scenario 1: Max flow using expected capacity
+Scenario 2: Max flow with min cost using risk (as cost) and capacity
+Scenario 3: Max flow with min cost using cost and expected capacity
+Scenario 4: Max flow with min cost using risk (as cost) and expected capacity
+Scenario 5: Max flow with min cost using a combination of risk + cost (as cost) and capacity
 
