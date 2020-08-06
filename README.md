@@ -8,9 +8,17 @@ Everything you need to know to work the code.
 In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	"Latitude & Longitude", and "Supply Chain Segment".
 - You do not have to make the special "START" (ID = 0) and "END" Nodes that will be described below.
 - Nodes must start at ID = 1.
+- e.g. | "1" | "150,000" | "2" | "41.639881, -87.541937" | "Bulk Storage" |
+  e.g. | "2" | "150,000" | "7" | "41.639881, -87.541937" | "AFB" |	
 
-In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", "Risk", and "Edge-Weighted Capacity".
-- Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.    
+In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", and "Risk".
+- Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.   
+- The Capacity has to do with End Node ID. e.g. if you're going from Start Node ID 0 (w/capacity 4) to End Node ID 4 (w/capacity 6) then capacity should list 6.
+- The Risk has to do with the End Node ID .e.g. if you're going from Start Node ID 0 (w/risk 4) to End Node ID 4 (w/risk 6) then risk should list 6.
+- For each refinery, there must be an edge from 0 to the refinery. 
+e.g. | "0" | "2" | "3" | "0.006" | "15081.962" |
+- e.g. Using the Nodes in the example above, 
+ | "1" | "2" | "15173" | "0.006" | "15081.962" |
 
 In Risks, we recommend filling in these columns "ID", "Risk Category", "Description", "Probability", "Impact", "Risk/Expected Impact", "Capacity w/ Risk", "Lowest Capacity w/ Risk", and "Final Risk/Expected Impact". 
 - "Final Risk/Expected Impact" combines all possible risks.  
