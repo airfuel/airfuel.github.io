@@ -6,6 +6,8 @@ Everything you need to know to work the code.
 (1) To create an input .csv file for the algorithm, we recommend creating three other .csv files: Nodes, Edges, and Risks.
 
 In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	"Latitude & Longitude", and "Supply Chain Segment".
+- You do not have to make the special "START" (ID = 0) and "END" Nodes that will be described below.
+- Nodes must start at ID = 1.
 
 In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", "Risk", and "Edge-Weighted Capacity".
 - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.    
