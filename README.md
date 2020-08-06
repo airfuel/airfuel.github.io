@@ -16,10 +16,10 @@ Everything you need to know to work the code.
 - The Capacity has to do with End Node ID. e.g. if you're going from Start Node ID 0 (w/capacity 4) to End Node ID 4 (w/capacity 6) then capacity should list 6.
 - The Risk has to do with the End Node ID. e.g. if you're going from Start Node ID 0 (w/risk 4) to End Node ID 4 (w/risk 6) then risk should list 6.
 - For each oil rig, there must be an edge from 0 to the oil rig. 
-e.g. | "0" | "2" | "3" | "0.006" | "15081.962" |
+e.g. | "0" | "2" | "3" | "0.006" | 
 - For each air force base, there must be an edge from (air force base id) to the special END Node ID. (Discussed below.)
 - e.g. Using the Nodes in the example above, 
- | "1" | "2" | "15173" | "0.006" | "15081.962" |
+ | "1" | "2" | "150,000" | "0.006" 
 
 (1.3) In Risks, we recommend filling in these columns "ID", "Risk Category", "Description", "Probability", "Impact", "Risk/Expected Impact", "Capacity w/ Risk", "Lowest Capacity w/ Risk", and "Final Risk/Expected Impact". 
 - "Final Risk/Expected Impact" combines all possible risks.  
