@@ -8,7 +8,7 @@ Everything you need to know to work the code.
 In Nodes, we recommend filling in these columns "ID", "Capacity (bpd)", "Cost",	"Latitude & Longitude", and "Supply Chain Segment".
 
 In Edges, we recommend filling in these columns "Start Node ID", "End Node ID", "Capacity", "Risk", and "Edge-Weighted Capacity".
-        - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.  
+       - Using the Nodes excel from above, you connect the nodes through edges. e.g. If an oil rig is connected to a refinery, that will be an edge.  
 
 In Risks, we recommend filling in these columns "ID", "Risk Category", "Description", "Probability", "Impact", "Risk/Expected Impact", "Capacity w/ Risk", "Lowest Capacity w/ Risk", and "Final Risk/Expected Impact". 
        - "Final Risk/Expected Impact" combines all possible risks.  
