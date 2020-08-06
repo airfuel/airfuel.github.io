@@ -58,3 +58,29 @@ e.g. Contuining the above example,
   |         2               |        0        |  
   |         3               |     -50,000     |  
   |         4               | -999,999,999,999|  
+  
+  (7) 
+  
+  Line 12 of OR_Flow.py is:
+  
+      output.write("Scenario 1: Max flow using expected capacity.\n\n")
+      
+   Line 46 of OR_Flow.py is:
+          
+      output = open("Output of Scenario 2.txt", "w")
+      
+  Line 75 of OR_Flow.py is:
+  
+      output = open("Output of Scenario 3.txt", "w")
+      
+  Line 101 of OR_Flow.py is:
+  
+      output = open("Output of Scenario 4.txt", "w")
+
+  Line 130 of OR_Flow.py is:
+  
+      output = open("Output of Scenario 5.txt", "w")
+
+ If you'd like to rename the ouput file, you can do so through the lines referenced above. 
+
+
